@@ -25,3 +25,6 @@ def status():
         table.add_row("Staged", item.a_path)
 
     console.print(table)
+
+    if not repo.untracked_files and not repo.index.diff(None):
+        console.print("[green]Repository is clean![/green]")
