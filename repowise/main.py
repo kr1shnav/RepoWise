@@ -6,6 +6,7 @@ from commands.info import info
 from commands.scan import scan
 from commands.tree import tree
 from commands.deps import deps
+from commands.todos import todos
 
 
 app = typer.Typer()
@@ -22,7 +23,7 @@ app.command()(info)
 app.command()(scan)
 app.command()(tree)
 app.command()(deps)
-
+app.command()(todos)
 
 
 if __name__ == "__main__":
