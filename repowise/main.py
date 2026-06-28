@@ -7,6 +7,7 @@ from commands.scan import scan
 from commands.tree import tree
 from commands.deps import deps
 from commands.todos import todos
+from commands.large_files import large_files
 
 
 app = typer.Typer()
@@ -24,6 +25,7 @@ app.command()(scan)
 app.command()(tree)
 app.command()(deps)
 app.command()(todos)
+app.command()(large_files)
 
 
 if __name__ == "__main__":
